@@ -12,7 +12,7 @@ declare map "graph" {key:string, value: string[]}
 declare map "visited" {key:string, value: boolean}
 init fileCount = 0  (keeps track of total no. of files)
 rootNode = /path/to/the/root/file/or/directory
-makeGraph(rootNode)
+makeGraph(node)
 END
 ```
 
