@@ -1,5 +1,5 @@
 # graphie-fs
-An algorithm used to organize a set of files/directories using a graph
+An algorithm used to organize a set of files/directories using a directed graph
 
 ## graphie-fs algorithm
 
