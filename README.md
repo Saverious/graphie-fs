@@ -13,10 +13,10 @@ init fileCount = 0  (keeps track of total no. of files)
 rootNode = /path/to/the/root/file/or/directory
 makeGraph(rootNode)
 END
-```plaintext
+```
 
-## makeGraph(node) Functiont
-```plaintext
+## makeGraph(node) Function
+```go
 makeGraph(node){
     CurrentNode = node
     if isVisited(CurrentNode){
@@ -41,7 +41,7 @@ makeGraph(node){
         return
     }
 }
-```plaintext
+```
 
 ## NOTE
 1. A node can be a file or a directory
