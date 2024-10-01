@@ -35,8 +35,9 @@ makeGraph(node){
     // CurrentNode has adjacent/child nodes if length(adjNodes[]) > 0
     if hasAdjacentNodes(CurrentNode){
         // CurrentNode is a folder, repeat makeGraph() for each adjacentNode
-        for i = 0 until i == length(adjacentNodes[] - 1){
-            makeGrapgh(adjacentNodes[i])
+        n = length(adjacentNodes[]) - 1
+        from i = 0 to i == n {
+            makeGraph(adjacentNodes[i])
         }
     }else{
         // CurrentNode does not have adjacent nodes
