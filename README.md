@@ -1,8 +1,11 @@
 # graphie-fs
 An algorithm used to organize a set of files/directories using a directed graph
 
-## graphie-fs algorithm
+# Usage
+To use the graphie-fs algorithm, pass the root directory as the starting node. The algorithm will recursively traverse the directory structure and build a directed graph, organizing files and directories efficiently.
 
+## Pseudocode
+```plaintext
 START
 declare map "graph" {key:string, value: string[]}
 declare map "visited" {key:string, value: boolean}
@@ -10,8 +13,10 @@ init fileCount = 0  (keeps track of total no. of files)
 rootNode = /path/to/the/root/file/or/directory
 makeGraph(rootNode)
 END
+```plaintext
 
-## function makeGraph(node)
+## makeGraph(node) Functiont
+```plaintext
 makeGraph(node){
     CurrentNode = node
     if isVisited(CurrentNode){
@@ -36,6 +41,7 @@ makeGraph(node){
         return
     }
 }
+```plaintext
 
 ## NOTE
 1. A node can be a file or a directory
