@@ -19,7 +19,7 @@ var fileCount = 0
 func getType(path string) (interface{}, error) {
 	entry, err := os.Stat(path)
 	if err != nil {
-		return nil, fmt.Errorf("isFile->os.Stat: %v\n", err)
+		return nil, fmt.Errorf("isFile->os.Stat: %v", err)
 	}
 
 	if entry.IsDir() {
@@ -35,7 +35,7 @@ func adjNode(path string) ([]string, error) {
 
 	isFile, err := getType(path)
 	if err != nil {
-		return nil, fmt.Errorf("adjNode->getType: %v\n", err)
+		return nil, fmt.Errorf("adjNode->getType: %v", err)
 	}
 
 	// path is a file, return
